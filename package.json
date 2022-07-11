@@ -19,7 +19,19 @@
 				"command": "yamlfmt.helloWorld",
 				"title": "Hello World"
 			}
-		]
+		],
+		"configuration": {
+			"type": "object",
+			"title": "YAML",
+			"properties": {
+				"yaml.compactSequenceStyle": {
+          "type": "boolean",
+          "scope": "language-overridable",
+          "default": true,
+          "description": "Controls whether arrays are indented or not. Default is to not indent arrays."
+        }
+			}
+		}
 	},
 	"scripts": {
 		"lint": "eslint .",

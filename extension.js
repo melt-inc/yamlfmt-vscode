@@ -23,10 +23,17 @@ async function activate(context) {
 
 	let disposable = vscode.languages.registerDocumentRangeFormattingEditProvider('yaml', {
 		provideDocumentRangeFormattingEdits: function (document, range, options) {
+			// expand range to start/end of line
 			range = range.with(document.lineAt(range.start.line).range.start, document.lineAt(range.end.line).range.end)
 
+			// settings
+			compact = vscode.workspace.getConfiguration('yaml').get('compactSequenceStyle')
+
 			let oldText = document.getText(range);
-			let newText = global.yamlfmt(oldText, options);
+			let newText = global.yamlfmt(oldText, options, compact);
+			if (!newText) {
+				newText = oldText
+			}
 
 			return [vscode.TextEdit.replace(range, newText)];
 		}

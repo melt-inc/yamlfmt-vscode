@@ -7,7 +7,7 @@
 		"url": "github.com/melt-inc/yamlfmt-vscode"
 	},
 	"publisher": "melt-inc",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.69.0"
 	},

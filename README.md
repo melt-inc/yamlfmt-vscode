@@ -27,7 +27,7 @@ You can also configure VSCode to format on save.
 This extension provides the following settings:
 
 * `yaml.compactSequenceStyle` — Controls whether arrays are indented an additional level.
-* `yaml.indentSize` — Sets the indentation size. Default is 2.
+* Tab size configuration is respected by yamlfmt.
 
 ## Known Issues
 

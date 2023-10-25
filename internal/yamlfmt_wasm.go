@@ -5,7 +5,7 @@ import (
 	"strings"
 	"syscall/js"
 
-	"github.com/jamesrom/yamlfmt"
+	"github.com/melt-inc/yamlfmt"
 )
 
 const DefaultTabSize = 2

@@ -104,3 +104,4 @@ dist
 .tern-port
 internal/yamlfmt.wasm
 docs/demo-project.stg
+*.vsix

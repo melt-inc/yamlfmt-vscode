@@ -1,8 +1,13 @@
 {
-	"name": "yamlfmt",
-	"displayName": "YAMLfmt",
-	"description": "YAMLfmt for Visual Studio Code",
-	"version": "0.0.1",
+	"name": "yamlfmt-vscode",
+	"displayName": "YAMLfmt for Visual Studio Code",
+	"description": "YAMLfmt is a compact, efficient, and **comment-preserving** YAML formatter.",
+	"repository": {
+		"type": "git",
+		"url": "github.com/melt-inc/yamlfmt-vscode"
+	},
+	"publisher": "melt-inc",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.69.0"
 	},
@@ -14,12 +19,6 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "yamlfmt.helloWorld",
-				"title": "Hello World"
-			}
-		],
 		"configuration": {
 			"type": "object",
 			"title": "YAML",
@@ -48,5 +47,9 @@
 		"mocha": "^10.0.0",
 		"typescript": "^4.7.4",
 		"@vscode/test-electron": "^2.1.5"
+	},
+	"pricing": "Free",
+	"sponsor": {
+		"url": "https://github.com/sponsors/melt-inc"
 	}
 }

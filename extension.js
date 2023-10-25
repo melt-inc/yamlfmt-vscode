@@ -9,7 +9,7 @@ require("./wasm_exec");
 const go = new Go();
 
 /**
- * this method is called when your extension is activated
+ * this method is called when the extension is activated
  * @param {vscode.ExtensionContext} context
  */
 async function activate(context) {
@@ -42,7 +42,7 @@ async function activate(context) {
 	context.subscriptions.push(disposable);
 }
 
-// this method is called when your extension is deactivated
+// this method is called when the extension is deactivated
 function deactivate() { }
 
 module.exports = {
